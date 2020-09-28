@@ -202,9 +202,10 @@ def big_shoe_rebounds
       if (game_hash[key][:players][count][:shoe] > biggest_shoe) then
        # binding.pry
         biggest_shoe = game_hash[key][:players][count][:shoe]
-        rebounds = game_hash[key][:players][count][:shoe]
+        rebounds = game_hash[key][:players][count][:rebounds]
       end
       count += 1
     end
   }
+  rebounds
 end

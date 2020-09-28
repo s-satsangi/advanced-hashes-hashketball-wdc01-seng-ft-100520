@@ -181,5 +181,14 @@ def player_numbers team_name
 end
 
 def player_stats player_name
-  
+    game_hash.each {|key,value|
+      count=0 
+      while (count < 5) do
+      if (game_hash[key][:players][count][:player_name] == players_name) then
+       # binding.pry
+        return game_hash[key][:players][count]
+      end
+      count += 1
+    end
+  }
 end

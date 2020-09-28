@@ -173,6 +173,7 @@ def player_numbers team_name
       count = 0
       while count < 5 do
         player_number_array.push(game_hash[key][:players][count][:number])
+        count += 1
       end
     end  
   end

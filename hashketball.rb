@@ -180,7 +180,7 @@ def player_numbers team_name
   player_number_array
 end
 
-def player_stats player_name
+def player_stats players_name
     game_hash.each {|key,value|
       count=0 
       while (count < 5) do

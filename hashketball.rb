@@ -195,5 +195,16 @@ end
 
 def big_shoe_rebounds
   biggest_shoe = -1
-  
+  rebounds = -1
+      game_hash.each {|key,value|
+      count=0 
+      while (count < 5) do
+      if (game_hash[key][:players][count][:shoe] > biggest_shoe) then
+       # binding.pry
+        biggest_shoe = game_hash[key][:players][count][:shoe]
+        rebounds = game_hash[key][:players][count][:shoe]
+      end
+      count += 1
+    end
+  }
 end

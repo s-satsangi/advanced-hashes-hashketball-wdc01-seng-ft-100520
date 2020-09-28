@@ -167,9 +167,9 @@ def team_names
 end
 
 def player_numbers team_name
+  player_number_array = []
    game_hash.each do |key, value|
     if game_hash[key][:team_name] == team_name then
-      player_number_array = []
       count = 0
       while count < 5 do
         player_number_array.push(game_hash[key][:players][count][:number])
